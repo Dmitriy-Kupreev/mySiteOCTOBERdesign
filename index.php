@@ -15,7 +15,8 @@
 			}
 
 			a:hover {
-				color: rgb(163, 203, 253);
+				color: rgb(27, 4, 253);
+				font-style: italic;
 			}
 			/* @import url(//fonts.googleapis.com/css?family=Lato:300:400); */
 
@@ -39,7 +40,7 @@
 			.header {
 				position: relative;
 				text-align: center;
-				background: linear-gradient(60deg, rgba(84, 58, 183, 1) 0%, rgba(0, 172, 193, 1) 100%);
+				background: linear-gradient(60deg, rgba(6, 0, 101, 1) 0%, rgba(248, 77, 33, 1) 100%);
 				color: white;
 			}
 			.logo {
@@ -179,7 +180,7 @@
 						role="button"
 						aria-controls="offcanvasExample"
 					>
-						->click&nbsp;<span class="style1">me</span>&nbsp;please!!!
+					&rarr;&nbsp;click&nbsp;<span class="style1">me</span>&nbsp;please!!!
 					</a>
 				</h1>
 			</div>

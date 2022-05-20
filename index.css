@@ -1,0 +1,33 @@
+.style1 {
+	color: #f45021;
+}
+a {
+	color: #000000;
+}
+
+/* a:hover {
+	font-style: italic;
+} */
+
+a:hover {
+	text-decoration: none;
+}
+
+.style5 {
+	letter-spacing: 25px;
+}
+body > a:nth-child(36) > img {
+	width: 100%;
+	height: auto;
+	max-width: 734px;
+}
+
+.container {
+	text-align: center;
+	margin: 0 auto;
+	width: 75%;
+}
+
+table {
+	text-align: center;
+}

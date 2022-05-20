@@ -1,0 +1,69 @@
+.style1 {
+	color: #0000ff;
+}
+a {
+	color: #000000;
+}
+
+/* a:hover {
+	font-style: italic;
+} */
+
+a:hover {
+	text-decoration: none;
+}
+
+.style5 {
+	letter-spacing: 25px;
+}
+body > table > tbody > tr > td {
+	text-align: center;
+}
+
+.bgCCCCC {
+	background-color: #cccccc;
+}
+.bg6699FF {
+	background-color: #6699ff;
+}
+.bg009999 {
+	background-color: #009999;
+}
+.bg999999 {
+	background-color: #999999;
+}
+
+.gallery {
+	background: url(./images/gallery2.gif);
+	display: inline-block; /*  Рисунок как блочный элемент */
+	width: 300px; /* Ширина рисунка */
+	height: 222px; /*  Высота рисунка */
+}
+.gallery:hover {
+	background: url(./images/gallery.gif);
+	display: inline-block; /*  Рисунок как блочный элемент */
+	width: 300px; /* Ширина рисунка */
+	height: 222px; /*  Высота рисунка */
+}
+.design {
+	background: url(./images/logo2.gif);
+	display: inline-block; /*  Рисунок как блочный элемент */
+	width: 369px; /* Ширина рисунка */
+	height: 119px; /*  Высота рисунка */
+}
+.design:hover {
+	background: url(./images/logo.gif);
+	display: inline-block; /*  Рисунок как блочный элемент */
+	width: 369px; /* Ширина рисунка */
+	height: 119px; /*  Высота рисунка */
+}
+
+.container {
+	text-align: center;
+	margin: 0 auto;
+	width: 75%;
+}
+
+table {
+	text-align: center;
+}

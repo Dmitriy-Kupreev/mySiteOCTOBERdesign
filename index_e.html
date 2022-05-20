@@ -1,0 +1,175 @@
+
+<html lang="en">
+	<head>
+		<link rel="shortcut icon" href="images/logo.ico">
+		</link>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Autumn portal ! Design-studio, literary circle, art-gallery</title>
+		<meta name="description" content="Autumn portal: Design studio, Literary circle, Art gallery. Here can order: design, printing, WEB, layout, outdoor advertising, creative, graphics, watercolor, slogan, naming, scenarios for audio and video, lyrics, songs">
+		<meta name="keywords" content="Design Branding transport decoration booklet catalog advertising module packaging labels creative outdoor advertising billboard transparencies external design showcase signboard entry team site banner illustration Interior Design exhibition booths slide promo racks magazine calendar cover forzats logo graphic style backgrounds cartoons souvenirs POS PROMO prezentor poster collage postcard Storyboard brand-book slogan NAMING Jingle poetry texts of songs scenario audio video clips presentation graphics watercolor office painting interior graphics">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css" >
+		<!-- Bootstrap JS + Popper JS -->
+		<script defer src="js/bootstrap.bundle.min.js"></script>
+
+		<link rel="stylesheet" href="./index.css">
+		
+		<script>    
+			var snowmax=25 
+			var snowcolor=["#ff6600","#ffcc00","#cccc00"]
+			var snowtype=["Arial Black","Arial Narrow","Times","Comic Sans MS","Courier New"]
+			var snowletter=["o","d","<img src=s1.gif>","<img src=s2.gif>","<img src=s3.gif>","<img src=s4.gif>"];
+			var sinkspeed=0.6   
+			var snowmaxsize=45  
+			var snowminsize=10 
+			var snowsizerange=snowmaxsize-snowminsize
+			var snowingleft=0.7
+			var snowingwidth=0.3 
+			var opac=0.7      
+			var stepTime=120 
+			var snow=new Array()
+			var marginbottom
+			var marginright
+			var timer
+			var x_mv=new Array();   var crds=new Array();   var lftrght=new Array();
+			var browserinfos=navigator.userAgent 
+			d=document
+			var isOpera=self.opera  
+			var ie5=d.all&&d.getElementById&&!isOpera
+			var ns6=d.getElementById&&!d.all
+			var browserok=ie5||ns6||isOpera
+
+			function randommaker(range){return Math.floor(range*Math.random())}
+
+			function botRight()
+			{
+				if(ie5||isOpera)
+				{
+					marginbottom=d.body.clientHeight;  
+					marginright=d.body.clientWidth;
+				}
+				else if(ns6)
+				{
+				marginbottom=innerHeight; marginright=innerWidth;
+				}
+			}
+
+			function checkPgDn()
+			{
+				scrltop=ns6?pageYOffset:document.body.scrollTop;
+			}
+
+			function initsnow() 
+			{
+			checkPgDn();if(ns6)setInterval("checkPgDn()",999);
+			botRight();
+				for (i=0;i<=snowmax;i++)
+				{
+					crds[i] = 0;                      
+					lftrght[i] = Math.random()*20;         
+					x_mv[i] = 0.03 + Math.random()/10;
+					snow[i]=d.getElementById("s"+i)
+					snow[i].style.fontFamily=snowtype[randommaker(snowtype.length)]
+					snow[i].style.fontSize=snow[i].size=randommaker(snowsizerange)+snowminsize
+					snow[i].style.color=snowcolor[randommaker(snowcolor.length)]
+					snow[i].sink=sinkspeed*snow[i].size/5
+					newPosSnow(randommaker(marginbottom-3*snow[i].size));
+				}
+				movesnow();
+			}
+
+			function newPosSnow(y)
+			{
+				var o;
+				snow[i].posx=randommaker(marginright*snowingwidth-2*snow[i].size)+marginright*snowingleft
+				snow[i].posy=y+(ns6?pageYOffset:d.body.scrollTop);
+				snow[i].size=randommaker(snowsizerange)+snowminsize;
+				if(snow[i].hasChildNodes()&&(o=snow[i].childNodes[0]).tagName=='IMG') o.width=o.height=randommaker(snowsizerange/1.6)+snowminsize;
+			}
+
+			function movesnow() 
+			{
+				for (i=0;i<=snowmax;i++) 
+				{
+					snow[i].style.top=snow[i].posy+=snow[i].sink+lftrght[i]*Math.sin(crds[i])/3;
+					crds[i] += x_mv[i];
+					snow[i].style.left=snow[i].posx+lftrght[i]*Math.sin(crds[i]);
+					if(snow[i].posy>=marginbottom-3*snow[i].size+scrltop || parseInt(snow[i].style.left)>(marginright-3*lftrght[i]))newPosSnow(0);
+				}
+				var timer=setTimeout("movesnow()",stepTime)
+			}
+
+			for (i=0;i<=snowmax;i++)
+			{
+				d.write("<span id='s"+i+"' style='position:absolute;"+(opac<1?"-moz-opacity:"+opac+";filter:alpha(opacity="+(opac*100)+")":"")+";top:-"+snowmaxsize+"'>"
+					+snowletter[Math.floor(snowletter.length*Math.random())]+"</span>")
+			}          
+
+			onload=function()
+			{
+				if(browserok)setTimeout("initsnow()",99);
+			}
+
+			onmousewheel = onscroll = function(){checkPgDn()}
+			onresize = function(){botRight();}
+		</script>
+
+	</head>
+
+	<body>
+
+		<div class="container">
+			
+			<div style="margin-bottom: 0.3rem;">
+				<span class="style5">autumn portal</span> ///
+				<marquee scrollamount="1" scrolldelay="20" width="20" height="22" behavior="scroll" direction="left">Matthew 7:16 By their fruits you will know them ...</marquee>
+			</div>
+			
+			<div>
+				<a href="gallery_e.html"><img src="images/gallery.gif" al="art-gallery" width="300" height="222"></a><a href="words_e.html"><img src="images/morskaya.gif" al="literary circle" width="300" height="114" style="vertical-align: bottom;"></a>
+			</div>
+			
+			<div style="margin-bottom: 0.3rem;">
+				<a href="gallery_e.html">art-gallery</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				
+				<a href="words_e.html">literary circle
+				</a>
+			</div>
+			
+			<div><a href="design_e.html"><img src="images/logo.jpg" al="design-studio" width="734" height="227"></a></div>
+			
+						
+			<div style="margin-bottom: 4rem;">
+				<a href="design_e.html">design-studio
+				</a>
+			</div>
+			
+			<div style="margin-bottom: 3rem;">
+				<a href="index.html">
+				НАШ &#8212;
+				ВЕЛИКИЙ И МОГУЧИЙ!!!</a>&nbsp;<img src="images/flags.gif" width="132" height="73" usemap="#Map">&nbsp;Angelic:)
+			</div>
+			
+			<div>
+				Apt.#322, #7/2, Kremenchug st., Moscow, Russia /// cell:+7(926)457-8019 ///
+				<a href="mailto:info@octoberdesign.ru">info<span class="style1">@</span>octoberdesign.ru</a>&nbsp;///
+				<a	href="./index.php" target="_blank">
+					CONTACT US<span class="style1">!!!</span>
+				</a>
+			</div>
+		</div>
+
+
+
+
+		<map name="Map">
+			<area shape="circle" coords="35,37,30" href="index.html" al="russian">
+		</map>
+
+
+	</body>
+</html>
+

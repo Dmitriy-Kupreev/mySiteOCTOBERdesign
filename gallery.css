@@ -1,0 +1,87 @@
+body {
+	background-color: #000000;
+	color: #ffffff;
+}
+.style5 {
+	letter-spacing: 25px;
+	color: #ffffff;
+}
+.style6 {
+	color: #f45021;
+}
+a {
+	font-size: 16px;
+	color: white;
+}
+
+/* a:hover {
+	font-style: italic;
+} */
+
+a:hover {
+	text-decoration: none;
+}
+
+.style8 {
+	font-size: 12pt;
+}
+
+.design {
+	background: url(./images/MYlogo2.gif);
+	display: inline-block; /*  Рисунок как блочный элемент */
+	width: 300px; /* Ширина рисунка */
+	height: 103px; /*  Высота рисунка */
+}
+.design:hover {
+	background: url(./images/MYlogo.gif);
+	display: inline-block; /*  Рисунок как блочный элемент */
+	width: 300px; /* Ширина рисунка */
+	height: 103px; /*  Высота рисунка */
+}
+.words {
+	background: url(./images/morskaya2.gif);
+	display: inline-block; /*  Рисунок как блочный элемент */
+	width: 300px; /* Ширина рисунка */
+	height: 114px; /*  Высота рисунка */
+}
+.words:hover {
+	background: url(./images/morskaya.gif);
+	display: inline-block; /*  Рисунок как блочный элемент */
+	width: 300px; /* Ширина рисунка */
+	height: 114px; /*  Высота рисунка */
+}
+
+body > table > tbody > tr > td {
+	text-align: center;
+}
+
+.bgf45021 {
+	background-color: #f45021;
+}
+.bg990000 {
+	background-color: #990000;
+}
+.bgFF9900 {
+	background-color: #ff9900;
+}
+
+.container {
+	text-align: center;
+	margin: 0 auto;
+	width: 75%;
+}
+
+table {
+	text-align: center;
+}
+
+.draggable {
+	width: fit-content;
+	height: fit-content;
+	padding: 2em;
+	cursor: grab;
+	border: 1px dotted rgb(196, 29, 29);
+}
+.modal-body {
+	overflow: hidden;
+}

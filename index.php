@@ -180,7 +180,7 @@
 						role="button"
 						aria-controls="offcanvasExample"
 					>
-					&rarr;&nbsp;click&nbsp;<span class="style1">me</span>&nbsp;please!!!
+					&rarr;&nbsp;click&nbsp;<span class="style1">me,</span>&nbsp;please!!!
 					</a>
 				</h1>
 			</div>

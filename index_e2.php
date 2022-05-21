@@ -175,12 +175,11 @@
 				</svg>
 				<h1>
 					<a
-						data-bs-toggle="offcanvas"
-						href="#offcanvasExample"
-						role="button"
-						aria-controls="offcanvasExample"
+
+						href="javascript:close();"
+
 					>
-					&rarr;&nbsp;жмём&nbsp;сюда!!!
+					&rarr;&nbsp;The message was sent successfully,&nbsp;go home?!
 					</a>
 					<marquee
 						style="font-size: 1rem; font-weight: 100"
@@ -190,7 +189,7 @@
 						height="22"
 						behavior="scroll"
 						direction="left"
-						>Быт. 1:2 и Дух Божий ношашеся верху воды...</marquee
+						>Gen. 1:2 And the Spirit of God moved upon the face of the waters...</marquee
 					>
 				</h1>
 			</div>
@@ -239,7 +238,7 @@
 			</div>
 			<div class="offcanvas-body">
 				<div>
-					<form action="send.php" method="post">
+					<form action="send_e.php" method="post">
 						<div class="mb-0">
 							<label for="exampleInputEmail1" class="form-label">Представьтесь, пожалуйста!</label>
 						</div>

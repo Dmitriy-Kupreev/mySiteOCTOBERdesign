@@ -175,12 +175,11 @@
 				</svg>
 				<h1>
 					<a
-						data-bs-toggle="offcanvas"
-						href="#offcanvasExample"
-						role="button"
-						aria-controls="offcanvasExample"
+					
+						href="javascript:close();"
+
 					>
-					&rarr;&nbsp;жмём&nbsp;сюда!!!
+					&rarr;&nbsp;Сообщение успешно отправлено,&nbsp;домой?!
 					</a>
 					<marquee
 						style="font-size: 1rem; font-weight: 100"

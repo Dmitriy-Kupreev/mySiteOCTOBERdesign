@@ -29,7 +29,7 @@ if(!empty($recaptcha)) {
 
         if (mail("d3_october@yahoo.com", "Заявка с сайта", "ФИО:".$fio.". E-mail: ".$email." Сообщение: ".$message ,"From: iwzeqbby@wesley.p-host.in \r\n")) {  
 			
-			require("index2.php");
+			require("index_e2.php");
         } else { 
         echo "При отправке сообщения возникли ошибки";
         }

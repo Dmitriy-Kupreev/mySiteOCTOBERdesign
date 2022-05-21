@@ -182,6 +182,16 @@
 					>
 					&rarr;&nbsp;click&nbsp;<span class="style1">me,</span>&nbsp;please!!!
 					</a>
+					<marquee
+						style="font-size: 1rem; font-weight: 100"
+						scrollamount="1"
+						scrolldelay="20"
+						width="20"
+						height="22"
+						behavior="scroll"
+						direction="left"
+						>Gen. 1:2 And the Spirit of God moved upon the face of the waters...</marquee
+					>
 				</h1>
 			</div>
 

@@ -125,12 +125,12 @@
 					font-size: 24px;
 				}
 			}
-
+			
 			h1 {
 				z-index: 1000;
 			}
 		</style>
-
+		
 		<link rel="stylesheet" href="../test.css" />
 	</head>
 	<body>
@@ -182,11 +182,12 @@
 				</svg>
 				<h1>
 					<a
-					
-						href="javascript:close();"
-
+						data-bs-toggle="offcanvas"
+						href="#offcanvasExample"
+						role="button"
+						aria-controls="offcanvasExample"
 					>
-					&rarr;&nbsp;Сообщение успешно отправлено,&nbsp;домой?!
+					&rarr;&nbsp;click&nbsp;me,&nbsp;please!!!
 					</a>
 					<marquee
 						style="font-size: 1rem; font-weight: 100"
@@ -196,7 +197,7 @@
 						height="22"
 						behavior="scroll"
 						direction="left"
-						>Быт. 1:2 и Дух Божий ношашеся верху воды...</marquee
+						>Gen. 1:2 And the Spirit of God moved upon the face of the waters...</marquee
 					>
 				</h1>
 			</div>
@@ -245,7 +246,7 @@
 			</div>
 			<div class="offcanvas-body">
 				<div>
-					<form action="send.php" method="post">
+					<form action="send_e.php" method="post">
 						<div class="mb-0">
 							<label for="exampleInputEmail1" class="form-label">Представьтесь, пожалуйста!</label>
 						</div>
@@ -291,7 +292,7 @@
 				</div>
 			</div>
 		</div>
-
+		
 		<canvas id="canvas"></canvas>
 		<script src="../test.js"></script>
 		<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>

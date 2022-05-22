@@ -182,11 +182,12 @@
 				</svg>
 				<h1>
 					<a
-					
-						href="javascript:close();"
-
+						data-bs-toggle="offcanvas"
+						href="#offcanvasExample"
+						role="button"
+						aria-controls="offcanvasExample"
 					>
-					&rarr;&nbsp;Сообщение успешно отправлено,&nbsp;домой?!
+					&rarr;&nbsp;жмём&nbsp;сюда!!!
 					</a>
 					<marquee
 						style="font-size: 1rem; font-weight: 100"
@@ -245,7 +246,7 @@
 			</div>
 			<div class="offcanvas-body">
 				<div>
-					<form action="send.php" method="post">
+					<form action="back.php" method="post">
 						<div class="mb-0">
 							<label for="exampleInputEmail1" class="form-label">Представьтесь, пожалуйста!</label>
 						</div>

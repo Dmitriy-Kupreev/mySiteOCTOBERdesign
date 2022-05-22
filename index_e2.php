@@ -16,7 +16,7 @@
 
 			a:hover {
 				color: rgb(27, 4, 253);
-				font-style: italic;
+				/* font-style: italic; */
 			}
 			/* @import url(//fonts.googleapis.com/css?family=Lato:300:400); */
 
@@ -38,10 +38,11 @@
 			} */
 
 			.header {
-				position: relative;
+				position: absolute;
 				text-align: center;
 				background: linear-gradient(60deg, rgba(6, 0, 101, 1) 0%, rgba(248, 77, 33, 1) 100%);
 				color: white;
+				width: 100%;
 			}
 			.logo {
 				width: 50px;
@@ -124,7 +125,13 @@
 					font-size: 24px;
 				}
 			}
+			
+			h1 {
+				z-index: 1000;
+			}
 		</style>
+		
+		<link rel="stylesheet" href="../test.css" />
 	</head>
 	<body>
 
@@ -284,5 +291,9 @@
 				</div>
 			</div>
 		</div>
+		
+		<canvas id="canvas"></canvas>
+		<script src="../test.js"></script>
+		<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
 	</body>
 </html>
